@@ -1,0 +1,10 @@
+﻿{
+  "TempPath": "/nas/hd1/downloads",
+  "YoutubeDlBin": "/usr/local/bin/youtube-dl",
+  "Ip": "192.168.1.130",
+  "Port": 5005,
+  "UrlPrefix": "YTDownloader",
+  "Debug": "true",
+  "FilesDownloadPath": "/nas/hd1/downloads",
+  "AudioDownloadPath": "/nas/hd2/music"
+}

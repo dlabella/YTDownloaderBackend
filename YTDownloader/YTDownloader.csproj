@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="config.linux.json" />
+    <None Remove="config.windows.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="config.linux.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config.windows.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.csproj" />
+    <ProjectReference Include="..\..\SimpleWebApiServer\SimpleWebApiServer\SimpleWebApiServer.csproj">
+      <Private>true</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\YTDownloader.Services\YTDownloader.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Configuration.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+</Project>

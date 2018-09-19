@@ -1,0 +1,10 @@
+﻿{
+  "TempPath": "c:\\temp",
+  "YoutubeDlBin": "C:\\usr\\bin\\youtube-dl.exe",
+  "Ip": "localhost",
+  "Port": 5005,
+  "UrlPrefix": "YTDownloader",
+  "Debug": "true",
+  "FilesDownloadPath": "c:\\temp\\downloads",
+  "AudioDownloadPath": "c:\\temp\\music"
+}
